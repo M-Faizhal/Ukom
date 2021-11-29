@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutKeranjang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivItemPesanan"
+                android:layout_width="95dp"
+                android:layout_height="110dp"
+                android:layout_gravity="left"
+                android:src="@color/citem" />
+
+            <TextView
+                android:id="@+id/tvPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="27dp"
+                android:layout_toRightOf="@id/ivItemPesanan"
+                android:text="Nama Paket"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:maxLines="2"
+                android:layout_toRightOf="@id/ivItemPesanan"
+                android:layout_gravity="center"
+                android:text="Deskripsi Paket" />
+
+            <TextView
+                android:id="@+id/tvHargaPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@id/ivItemPesanan"
+                android:text="Harga Paket" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

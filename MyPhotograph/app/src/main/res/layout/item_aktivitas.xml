@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAktivitas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivAktivitas"
+                android:layout_width="95dp"
+                android:layout_height="130dp"
+                android:layout_gravity="left"
+                android:src="@color/citem" />
+
+            <TextView
+                android:id="@+id/tvAktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="27dp"
+                android:layout_toRightOf="@id/ivAktivitas"
+                android:text="Nama Aktivitas"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPukulAktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@id/ivAktivitas"
+                android:gravity="center"
+                android:text="Pukul Aktivitas" />
+
+            <TextView
+                android:id="@+id/tvDescAktivitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ivAktivitas"
+                android:text="Detail Aktivitas"
+                android:maxLines="2" />
+
+            <TextView
+                android:id="@+id/tvStatusPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:layout_toEndOf="@id/tvDescAktivitas"
+                android:text="Status Pemesanan"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="102dp"
+                android:layout_toEndOf="@id/tvDescAktivitas"
+                android:gravity="center"
+                android:text="Status"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

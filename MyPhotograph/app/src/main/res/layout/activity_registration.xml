@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/tvRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi"
+        android:layout_marginTop="15dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsernameDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username : "
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegis" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUsernameDaftar"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegis" />
+
+    <TextView
+        android:id="@+id/tvEmailDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsernameDaftar" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvEmailDaftar"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <TextView
+        android:id="@+id/tvAlamatDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailDaftar" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:hint="Alamat"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAlamatDaftar"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/tvNomorTelpDafter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon : "
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatDaftar" />
+
+    <EditText
+        android:id="@+id/etNomorTelp"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:hint="Nomor Telepon"
+        android:textSize="16sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNomorTelpDafter"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat" />
+
+    <TextView
+        android:id="@+id/tvPasswordDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomorTelpDafter" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPasswordDaftar"
+        app:layout_constraintTop_toBottomOf="@+id/etNomorTelp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:text="Simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

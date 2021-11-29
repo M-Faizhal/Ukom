@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivNotif"
+                android:layout_width="95dp"
+                android:layout_height="90dp"
+                android:layout_gravity="left"
+                android:src="@color/citem" />
+
+            <TextView
+                android:id="@+id/tvNotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/ivNotif"
+                android:text="Nama Notifikasi"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIsiNotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/ivNotif"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="Deskripsi Notifikasi"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
